@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="name"> priya</p>
+    <button type="button" onclick='document.getElementById("name").innerHTML=" priya sharma"'> click</button>
+
+
+    <br>
+
+
+
+    <button type="button" onclick="document.getElementById('image').src='image/doreamon.png'">doreamon</button>
+
+    <img id="image" src="image/shinchan.png" width="100px">
+
+    <button type="button" onclick="document.getElementById('image').src='image/shinchan.png'">shinchan</button>
+
+    <br>
+
+
+    <p id="demo"> Demo </p>
+
+    <script>
+        document.getElementById("demo").innerHTML = (5 + 2) * 3;
+    </script>
+    <br>
+
+
+    <p id="email"></p>
+    <script>
+        var x = 5;
+        var y = 6;
+        var total = x + y;
+        document.getElementById('email').innerHTML = "total is :" + total;
+    </script>
+
+
+    <br>
+
+
+    <p id="class"></p>
+
+    <script>
+        var Name;
+        document.getElementById("class").innerHTML = Name;
+    </script>
+</body>
+
+</html>

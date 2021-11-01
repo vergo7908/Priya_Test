@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>global variable</h1>
+
+    <script>
+        let name = "priya"
+
+        myfunction()
+
+        function myfunction() {
+            document.write(name)
+        }
+    </script>
+
+    <br>
+
+    <p id="number"></p>
+
+
+
+    <script>
+        var x = 6
+
+        myfunction()
+
+        function myfunction() {
+            document.getElementById('number').innerHTML = x
+        }
+    </script>
+
+
+
+    <br>
+
+
+    <h2>local variable</h2>
+    <script>
+        myfunction()
+
+        function myfunction() {
+            var name = "priya sharma"
+
+            document.write(name)
+
+        }
+    </script>
+
+
+    <br>
+
+    <p id="email"></p>
+    <script>
+        myfunction()
+
+        function myfunction() {
+
+            var x = 9;
+            var y = 8;
+            document.getElementById('email').innerHTML = x + y;
+        }
+    </script>
+
+    <br>
+    <p id="name"></p>
+
+
+    <script>
+        var x = 5;
+
+        var x = 8;
+
+        document.getElementById('name').innerHTML = x;
+    </script>
+
+
+    <br>
+
+
+
+    <script>
+        var x = 3;
+
+        let x = 5;
+
+        document.write(x)
+    </script>
+
+
+    <br>
+
+    <script>
+        carname = "volvo ";
+
+        document.write(carname)
+
+        var carname;
+    </script>
+
+    <br>
+
+    <p id="demo"></p>
+    <script>
+        {
+            carName = "Volvo";
+            let carName;
+            document.getElementById("demo").innerHTML = carName;
+        } catch (err) {
+            document.getElementById("demo").innerHTML = err.name + ": " + err.message;
+        }
+    </script>
+
+
+    <br>
+
+
+
+    <script>
+        const car = {
+            type: "Fiat",
+            model: "500",
+            color: "white"
+        };
+
+
+        car.color = "blue";
+        car.owner = "johnson";
+
+
+
+        document.write(car.owner);
+    </script>
+
+
+
+
+    <br>
+    <p id="class"></p>
+
+    <script>
+        const car = {
+            type: "Fiat",
+            model: "500",
+            color: "white"
+        };
+
+
+        car.color = "blue";
+        car.owner = "johnson";
+
+        document.getElementById('class').innerHTML = "car.color";
+    </script>
+
+</body>
+
+</html>
